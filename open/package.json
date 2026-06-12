@@ -1,0 +1,46 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "open",
+  "title": "Open",
+  "description": "Open PRs, issues, Linear tickets, and Farm runs by short slug",
+  "icon": "command-icon.png",
+  "author": "jack",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "open",
+      "title": "Open",
+      "description": "Resolve a short slug to a URL and open it",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "vi#123, eng-456, run abc",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.80.0",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "^22.5.0",
+    "@types/react": "^18.3.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
