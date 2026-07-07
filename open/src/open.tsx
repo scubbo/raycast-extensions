@@ -6,7 +6,7 @@ const config: OpenConfig = {
   repos: {
     vi: "vercel/infra",
     va: "vercel/api",
-    rf: "vercel/goatfarm",
+    vg: "vercel/goatfarm",
   },
   linearWorkspace: "vercel",
   farmRunsBase: "https://<your-farm-host>/runs",
